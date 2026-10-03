@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junior Prima Syahputra – CV Online</title>
+<meta name="description" content="CV online Junior Prima Syahputra, siswa XI TKJ 2 SMK Galajuara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF1F4;
+  --card:#FFFFFF;
+  --ink:#1B2430;
+  --muted:#5A6675;
+  --line:#D3D9E0;
+  --side:#1F2D3D;
+  --side-text:#E6EBF0;
+  --side-muted:#9FB0C1;
+  --accent:#F2B134;
+  --link:#1F5FBF;
+  --head:"Familjen Grotesk","Segoe UI",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper)}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+.layout{display:grid;grid-template-columns:340px 1fr;min-height:100vh}
+
+/* Sidebar */
+.side{background:var(--side);color:var(--side-text);padding:48px 32px;position:sticky;top:0;height:100vh;overflow-y:auto}
+.mark{width:84px;height:84px;background:var(--accent);color:var(--side);display:grid;place-items:center;font-family:var(--head);font-weight:700;font-size:34px;border-radius:6px;margin-bottom:24px}
+.side h1{font-family:var(--head);font-size:30px;line-height:1.15;font-weight:700;margin-bottom:8px}
+.role{color:var(--side-muted);margin-bottom:32px}
+.side h2{font-family:var(--head);font-size:15px;font-weight:500;color:var(--accent);margin-bottom:10px}
+.contact{list-style:none;margin-bottom:28px}
+.contact li{padding:9px 0;border-top:1px solid #34475B;font-size:16px;word-break:break-word}
+.contact span{display:block;font-size:14px;color:var(--side-muted)}
+.contact a{text-decoration:none}
+.contact a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--accent);color:var(--side);border:0;font:600 16px var(--body);padding:11px 18px;border-radius:4px;cursor:pointer}
+.btn:hover{background:#FFC24D}
+
+/* Main */
+main{padding:56px 64px 40px;max-width:900px}
+section{margin-bottom:48px}
+section>h2{font-family:var(--head);font-size:26px;font-weight:700;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.intro{font-size:20px;line-height:1.55;max-width:62ch}
+
+/* Pendidikan: urutan waktu */
+.edu{list-style:none;border-left:3px solid var(--ink);margin-left:6px}
+.edu li{position:relative;padding:0 0 26px 26px}
+.edu li:last-child{padding-bottom:0}
+.edu li::before{content:"";position:absolute;left:-10px;top:7px;width:16px;height:16px;background:var(--paper);border:3px solid var(--ink);border-radius:50%}
+.edu li.now::before{background:var(--accent)}
+.edu .yr{font-weight:600;color:var(--muted);font-size:15px}
+.edu h3{font-family:var(--head);font-size:20px;font-weight:500}
+.edu p{color:var(--muted)}
+.badge{display:inline-block;background:var(--accent);color:var(--side);font-size:13px;font-weight:600;padding:1px 9px;border-radius:3px;margin-left:8px;vertical-align:middle}
+
+/* Keahlian */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--ink);padding:16px 18px}
+.skill h3{font-family:var(--head);font-size:19px;font-weight:500}
+.skill p{color:var(--muted);font-size:16px}
+
+/* Data diri */
+dl{background:var(--card);border:1px solid var(--line)}
+dl div{display:grid;grid-template-columns:170px 1fr;padding:12px 18px;border-top:1px solid var(--line)}
+dl div:first-child{border-top:0}
+dt{color:var(--muted)}
+dd{font-weight:600}
+
+.hobby{background:var(--card);border:1px solid var(--line);padding:18px 20px;max-width:62ch}
+footer{color:var(--muted);font-size:15px;padding-top:16px;border-top:1px solid var(--line)}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;height:auto;padding:36px 24px}
+  main{padding:36px 24px 32px}
+  .skills{grid-template-columns:1fr}
+  dl div{grid-template-columns:1fr;gap:0}
+}
+@media print{
+  body{background:#fff;font-size:14px}
+  .layout{display:block}
+  .side{position:static;height:auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .btn{display:none}
+  main{padding:24px 0}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="side">
+    <div class="mark" aria-hidden="true">JP</div>
+    <h1>Junior Prima Syahputra</h1>
+    <p class="role">Siswa XI TKJ 2, SMK Galajuara</p>
+
+    <h2>Kontak</h2>
+    <ul class="contact">
+      <li><span>Telepon</span><a href="tel:+62895616003283">0895 6160 03283</a></li>
+      <li><span>Email</span><a href="mailto:juniorprimajago@gmail.com">juniorprimajago@gmail.com</a></li>
+      <li><span>Alamat</span>Villa Indah Pulo Timaha</li>
+      <!-- Telegram: isi nanti, contoh: <li><span>Telegram</span><a href="https://t.me/username">@username</a></li> -->
+    </ul>
+
+    <h2>Media sosial</h2>
+    <ul class="contact">
+      <li><span>Instagram</span><a href="https://www.instagram.com/jhunnioo" target="_blank" rel="noopener">@jhunnioo</a></li>
+      <li><span>TikTok</span><a href="https://www.tiktok.com/@jhunnioo" target="_blank" rel="noopener">@jhunnioo</a></li>
+    </ul>
+
+    <button class="btn" onclick="window.print()">Simpan sebagai PDF</button>
+  </aside>
+
+  <main>
+    <section id="tentang">
+      <h2>Tentang saya</h2>
+      <p class="intro">Saya Junior, siswa kelas XI jurusan Teknik Komputer dan Jaringan di SMK Galajuara. Saya sedang belajar jaringan Wi-Fi dan dasar pembuatan website dengan HTML dan CSS, dan terbiasa memakai AI lewat prompting untuk membantu belajar dan mengerjakan tugas.</p>
+    </section>
+
+    <section id="pendidikan">
+      <h2>Pendidikan</h2>
+      <ol class="edu">
+        <li class="now">
+          <span class="yr">2025 – sekarang</span>
+          <h3>SMK Galajuara <span class="badge">Sedang berjalan</span></h3>
+          <p>Teknik Komputer dan Jaringan, kelas XI TKJ 2</p>
+        </li>
+        <li>
+          <span class="yr">2022 – 2025</span>
+          <h3>SMPN 5 Babelan</h3>
+          <p>Sekolah Menengah Pertama</p>
+        </li>
+        <li>
+          <span class="yr">2016 – 2022</span>
+          <h3>SDN Babelan Kota 04</h3>
+          <p>Sekolah Dasar</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="keahlian">
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <div class="skill"><h3>Prompting</h3><p>Menyusun perintah yang jelas agar AI memberi hasil yang tepat.</p></div>
+        <div class="skill"><h3>Wi-Fi</h3><p>Dasar pengaturan dan pemeliharaan jaringan nirkabel.</p></div>
+        <div class="skill"><h3>HTML dasar</h3><p>Membuat struktur halaman web.</p></div>
+        <div class="skill"><h3>CSS dasar</h3><p>Mengatur tampilan dan tata letak halaman web.</p></div>
+      </div>
+    </section>
+
+    <section id="hobi">
+      <h2>Hobi</h2>
+      <p class="hobby">Bermain game.</p>
+    </section>
+
+    <section id="data">
+      <h2>Data diri</h2>
+      <dl>
+        <div><dt>Nama lengkap</dt><dd>Junior Prima Syahputra</dd></div>
+        <div><dt>Tempat, tanggal lahir</dt><dd>Jakarta, 3 Juni 2009</dd></div>
+        <div><dt>Usia</dt><dd id="usia">–</dd></div>
+        <div><dt>Kelas</dt><dd>XI TKJ 2</dd></div>
+        <div><dt>Alamat</dt><dd>Villa Indah Pulo Timaha</dd></div>
+      </dl>
+    </section>
+
+    <footer>&copy; <span id="tahun">2026</span> Junior Prima Syahputra</footer>
+  </main>
+
+</div>
+<script>
+(function(){
+  var lahir=new Date(2009,5,3), now=new Date();
+  var u=now.getFullYear()-lahir.getFullYear();
+  var m=now.getMonth()-lahir.getMonth();
+  if(m<0||(m===0&&now.getDate()<lahir.getDate()))u--;
+  document.getElementById('usia').textContent=u+' tahun';
+  document.getElementById('tahun').textContent=now.getFullYear();
+})();
+</script>
+</body>
+</html>
